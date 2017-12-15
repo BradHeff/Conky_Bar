@@ -1,6 +1,3 @@
-# RSS News Conky by https://github.com/tr37ion
-
-#avoid flicker
 double_buffer yes
 
 own_window yes
@@ -27,7 +24,6 @@ gap_x 145
 
 # Alignment
 alignment top_left
-# alignment botton_left
 
 # Interval
 update_interval 2
@@ -52,21 +48,6 @@ use_spacer none
 minimum_size 0 24
 maximum_width 2560	
 default_bar_size 92 8
-
-#${color2}Temp: ${color3}${execi acpi -t }°C ${color5}| \
-#${color2}CPU1: ${color3}${cpu cpu1}% \
-#${color2}CPU2: ${color3}${cpu cpu2}% \
-#${color2}CPU3: ${color3}${cpu cpu3}% \
-#${color2}CPU4: ${color3}${cpu cpu4}% ${color5} | \
-#${color2}Swap: ${color3}${swapperc}% ${color5} | \
-#Install 'lm_sensors' and exec 'sensors-detect' then run 'sensors' to get your IDs | \
-#${color2}MB Temp: $alignr ${execi 30 sensors | grep 'Physical id 0:' | cut -c17-18}°C ${color5} | \
-#${color2}GPU Intel Temp: $alignr ${execi 30 sensors | grep 'Core 0:' | cut -c16-17}°C ${color5} | \
-#${color2}GPU NV2 Temp: $alignr ${execi 30 sensors | grep 'Core 1:' | cut -c16-17}°C ${color5} | \
-#${color2}CPU1: ${color1}${voffset 1}${cpugraph cpu1 8,50} ${color2} ${cpu cpu1}% ${voffset -1} \
-#${color2}CPU2: ${color1}${voffset 1}${cpugraph cpu2 8,50} ${color2} ${cpu cpu2}% ${voffset -1} \
-#${color2}CPU3: ${color1}${voffset 1}${cpugraph cpu3 8,50} ${color2} ${cpu cpu3}% ${voffset -1} \
-#${color2}CPU4: ${color1}${voffset 1}${cpugraph cpu4 8,50} ${color2} ${cpu cpu4}% ${voffset -1} ${color5}| \
 
 TEXT
 ${color5}${font OpenLogos:size=25}t${font}${voffset -10}  \
